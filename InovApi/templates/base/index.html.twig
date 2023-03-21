@@ -1,0 +1,55 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}{{parent()}}Accueil{% endblock %}
+
+{% block body %}
+<div class="content" style="margin-top: 10%">
+    <div class="container content">
+        <ul class="list-group mt-5 connect-box" style="list-style-type: none;">
+            <li class="text-center text-secondary mt-4 pt-4 display-1 fw-bold">Innov'Anglais</li>
+            <li class="text-center text-primary mb-4 pb-4 display-2">Apprendre l'Anglais est un jeu d'enfant</li>
+        </ul>
+    </div>
+    <div class="cardup card" style="margin-top: 25%">
+
+        <div class="container">
+            <img src="./css/fun.jpg" class="imgRight">
+
+            <span>
+                <h1>Qu'est-ce qu'Innov'Anglais ?<br /></h1>
+                <h2><br />Innov'Anglais est une application qui vas vous aidez pour l'aprentissage de l'anglais, que se soit pour votre culture général, ou dans le cadre de votre travail.</h2>
+            </span>
+
+        </div>
+    </div>
+    <div class="cardup card" style="margin-top: 5%">
+
+        <div class="container">
+            <img src="./css/english.jpg" class="imgLeft">
+
+            <span>
+                <h1>Pourquoi apprendre l'anglais?</h1>
+                <h2>L'anglais est considéré comme langue universelle dans le monde. Cela nous permet donc de communiquer avec n'importe qui autour du globe.</h2>
+            </span>
+
+        </div>
+    </div>
+    <div class="cardup card" style="margin-top: 5%">
+
+        <div class="container">
+            <span class="text-center">
+                <h1>Près a vous lançez ?</h1>
+                <h4>Commencez a apprendre l'anglais dès maintenant en vous <a href="{{path('app_login')}}">créant un compte</a> et en commencer l'un de nos exercice.</h4>
+                <h4>Vous avez dèja commencer votre apprentissage de l'anglais? Vous pouvez <a href="{{path('app_login')}}">vous connecter</a> et commencer vos exercice du jour.</h4>
+            </span>
+
+        </div>
+    </div>
+
+</div>
+{% endblock %}
+
+{% block javascripts %}
+<script src="./js/function.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous"></script>
+{% endblock %}
